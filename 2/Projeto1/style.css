@@ -1,0 +1,22 @@
+body {
+    background-color: #FFF0F5; /* lavanda clara */
+    color: #5D3A9B; /* roxo escuro fofo */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    background-color: #FFB6B9; /* rosa bebê */
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.texto {
+    background-color: #E0BBE4; /* rosa lavanda */
+    padding: 20px;
+    border-radius: 10px;
+    white-space: pre-wrap; /* mantém quebra de linha no <pre> */
+    border: 2px solid #AED9E0; /* azul piscina claro */
+}

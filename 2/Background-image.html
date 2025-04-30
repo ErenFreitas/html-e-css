@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Fundo com CSS</title>
+    <style>
+    body {
+      /* Define a imagem de fundo */
+        background-image: url('https://cdn-images.dzcdn.net/images/cover/e29df808d39deca9d932504f819af078/0x1900-000000-80-0-0.jpg');
+        /* Outras formas:
+         background-image: linear-gradient(red, yellow);   // degradê
+         background-image: none;                           // remove fundo
+      */
+
+      /* Define se a imagem vai se repetir */
+        background-repeat: no-repeat;
+        /* Opções:
+            repeat         → repete nos dois eixos (padrão)
+            repeat-x       → repete apenas na horizontal
+            repeat-y       → repete apenas na vertical
+            no-repeat      → não repete
+      */
+
+      /* Define o comportamento ao rolar a página */
+        background-attachment: fixed;
+        /* Opções:
+            scroll         → rola junto com a página (padrão)
+            fixed          → fica fixa no fundo, mesmo rolando
+            local          → rola junto com o conteúdo do elemento
+      */
+
+      /* Define a posição da imagem no fundo */
+        background-position: center;
+        /* Opções:
+            left top       → canto superior esquerdo
+            right bottom   → canto inferior direito
+            center center  → totalmente centralizada
+            100px 50px     → valores personalizados (x, y)
+      */
+
+      /* Define o tamanho da imagem */
+        background-size: cover;
+        /* Opções:
+            auto           → mantém o tamanho original da imagem
+            cover          → cobre todo o elemento (pode cortar)
+            contain        → faz a imagem caber inteira (pode sobrar espaço)
+            100% 100%      → força largura e altura específicas
+      */
+
+      height: 100vh; /* 100% da altura da janela */
+      margin: 0;     /* remove espaçamento padrão do body */
+    }
+
+    .conteudo {
+        padding: 50px;
+        background-color: rgba(255, 255, 255, 0.8); /* fundo branco com 80% de opacidade */
+      /* Dica: pode usar outras cores como rgba(0,0,0,0.5) para fundo escuro */
+    }
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+    <h1>Manipulando imagens de fundo com CSS</h1>
+    <p><strong>background-repeat:</strong> controla se a imagem se repete ou não.</p>
+    <p><strong>background-attachment:</strong> define se o fundo rola com a página ou fica fixo.</p>
+    <p><strong>background-position:</strong> posiciona a imagem (ex: centro, canto superior, etc).</p>
+    <p><strong>background-size:</strong> controla o redimensionamento da imagem no fundo.</p>
+    </div>
+</body>
+</html>
